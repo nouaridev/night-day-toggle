@@ -41,14 +41,7 @@
     position: absolute;
 }
 
-.container .toggle .content .btn{
-    width: 50px;
-    z-index: 3;
-    left: 300px;
-    top: 50px;
-    transition: 0.5s;
-    opacity: 0;
-}
+
 
 .container .toggle .content .sun{
     position: absolute;
@@ -99,9 +92,7 @@ opacity: 0;
     opacity: 1;
 }
 
-.container .toggle input:checked + .content .btn{
-    left: 330px;
-}
+
 .container .toggle input:checked + .content .sun{
     top: 10px;
     opacity: 1;
