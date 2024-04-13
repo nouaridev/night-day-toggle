@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .toggle{
+    width: 400px;
+    height: 120px;
+    padding: 0;
+   position: relative;
+}
+.container .toggle input{
+    position: absolute;
+    height: 120px;
+    width: 400px;
+    z-index: 6;
+    opacity: 0;
+    transition-delay: 0.3s;
+}
+.container .toggle .content{
+    height: 120px;
+    width: 100%;
+    position: relative;
+   
+}
+
+.container .toggle .content img{
+    position: absolute;
+}
+
+.container .toggle .content .btn{
+    width: 50px;
+    z-index: 3;
+    left: 300px;
+    top: 50px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .toggle .content .sun{
+    position: absolute;
+    width: 50px;
+    left: 70px;
+    top: 70px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.container .toggle .content .side{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    transition: 0.3s;
+}
+
+.container .toggle .content .left{
+
+    height: 120px;
+}
+
+.container .toggle .content .side img{
+    width: 400px;
+position: absolute; top: -40px;
+}
+
+.container .toggle .content .side  h1{
+    position: absolute;
+    top: -80px;
+    font-family: cursive;
+    font-size: 50px;
+    left: 35%;
+    color: blanchedalmond;
+}
+
+.container .toggle .content .right{
+opacity: 0;
+}
+
+
+
+.container .toggle input:checked + .content .left{
+    opacity: 0;
+}
+.container .toggle input:checked + .content .right{
+    opacity: 1;
+}
+
+.container .toggle input:checked + .content .btn{
+    left: 330px;
+}
+.container .toggle input:checked + .content .sun{
+    top: 10px;
+    opacity: 1;
+    width: 100px;
+}
